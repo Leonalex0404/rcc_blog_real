@@ -1,5 +1,5 @@
 ---
-title: "quartoCourseBlog"
+title: "CryptidZilla"
 listing:
   contents: posts
   sort: "date desc"
@@ -12,4 +12,4 @@ page-layout: full
 title-block-banner: true
 ---
 
-This is me, I always come back, hahahahhaah
+Welcome to my website showing off my R portfolio. I created this website as part of a program for Dominican University
