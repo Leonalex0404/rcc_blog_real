@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,13 +32,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b651517ce65839d647a86e2780455cfb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a8ddd2f18e073ad4b8406473afa98597.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-eabbb2bc761cdb3ae61a27d0045cb060.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,6 +79,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Alex Leon’s Portfolio</span>
     </a>
@@ -146,42 +149,12 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
   <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>The content on this page is from <code>about.qmd</code>. Edit that file to change how this page looks.</p>
-<p>“About” pages are special quarto template pages, with multiple options: <a href="https://quarto.org/docs/websites/website-about.html" class="uri">https://quarto.org/docs/websites/website-about.html</a>.</p>
-<p>Try changing the template type from <code>jolla</code> to one of the other options for a different look and feel</p>
 <section id="introduction" class="level1">
 <h1>Introduction:</h1>
 <p>My website is created and maintained by me – Alejandro Leon, a Dominican University Student + Computer Science Major. I started getting into development with my website on August 6th 2025, ever since I’ve started to upload some projects here and there from time to time.</p>
 </section>
-<section id="methods" class="level1">
-<h1>Methods</h1>
-</section>
-<section id="data-source" class="level1">
-<h1>Data Source</h1>
-<p>Author: The Devastator</p>
-<p>Tittle: <strong>Bigfoot Sightings</strong></p>
-<p>Status: Updated 3 years ago</p>
-<p>Source: <a href="https://www.kaggle.com/datasets/thedevastator/unlocking-mysteries-of-bigfoot-through-sightings" class="uri">https://www.kaggle.com/datasets/thedevastator/unlocking-mysteries-of-bigfoot-through-sightings</a></p>
-</section>
-<section id="package-used" class="level1">
-<h1>Package used</h1>
-<p>Some of the packages that I had to use were some of the following:</p>
-<ul>
-<li><p>library(tidyverse)</p></li>
-<li><p>library(maps)</p></li>
-<li><p>library(mapproj)</p></li>
-<li><p>library(ggplot2)</p></li>
-<li><p>library(dplyr)</p></li>
-</ul>
-</section>
-<section id="approach" class="level1">
-<h1>Approach</h1>
-</section>
-<section id="results" class="level1">
-<h1>Results</h1>
-</section>
-<section id="results-1" class="level1">
-<h1>Results</h1>
+<section id="section" class="level1">
+<h1></h1>
 
 
 </section>
@@ -232,13 +205,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

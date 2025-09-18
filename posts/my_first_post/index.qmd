@@ -1,11 +1,11 @@
 ---
-title: "Cryptid Case 001"
+title: "Personal Project 001"
 author: "Alejandro Leon"
 date: "2025-8-6"
-categories: [cryptids,sample_project]
+categories: ["Cryptid Project"]
 ---
 
-Case 001: Bigfoot
+Proj_001: Bigfoot tracker
 
 ![](hand-drawn-bigfoot-silhouette_23-2150279807.avif)
 

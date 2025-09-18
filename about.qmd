@@ -18,44 +18,8 @@ about:
       href: https://www.reddit.com/
 ---
 
-The content on this page is from `about.qmd`. Edit that file to change how this page looks.
-
-"About" pages are special quarto template pages, with multiple options: <https://quarto.org/docs/websites/website-about.html>.
-
-Try changing the template type from `jolla` to one of the other options for a different look and feel
-
 # Introduction:
 
 My website is created and maintained by me – Alejandro Leon, a Dominican University Student + Computer Science Major. I started getting into development with my website on August 6th 2025, ever since I've started to upload some projects here and there from time to time.
 
-# Methods
-
-# Data Source
-
-Author: The Devastator
-
-Tittle: **Bigfoot Sightings**
-
-Status: Updated 3 years ago
-
-Source: <https://www.kaggle.com/datasets/thedevastator/unlocking-mysteries-of-bigfoot-through-sightings>
-
-# Package used
-
-Some of the packages that I had to use were some of the following:
-
--   library(tidyverse)
-
--   library(maps)
-
--   library(mapproj)
-
--   library(ggplot2)
-
--   library(dplyr)
-
-# Approach
-
-# Results
-
-# Results
+# 
